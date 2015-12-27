@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"></meta>
+  <title>JavaScript Closures</title>
+</head>
+
+<style>
+.fakeBtn, .fakeBtnClear {
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border: 1px solid blue;
+  color: black;
+  margin: 0.4rem 0.3rem 0rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: #efe;
+  cursor: pointer;
+}
+
+.fakeBtnClear {
+  color: white;
+  background-color: #aaa;
+  border: 1px solid #555;
+  margin-bottom: 0.4rem;
+}
+
+</style>
+
+<body>
+  <h1>JavaScript Closures</h1>
+
+  <span id="clearLog" class="fakeBtnClear">Clear</span><span>Clear DOM log.</span><br>
+  <span id="C1" class="fakeBtn">Closures 1</span><span>Run closures made entirely by outer function.</span><br>
+  <span id="C2" class="fakeBtn">Closures 2</span><span>Run closures made entirely by outer function, shortcut.</span><br>
+  <span id="C3" class="fakeBtn">Closures 3</span><span>Run closures made by an outer function that modifies a given function.</span><br>
+  <span id="C4" class="fakeBtn">Closures 4</span><span>Customize existing function using call().</span><br>
+  <span id="C5" class="fakeBtn">Closures 5</span><span>Customize existing function using call() (thin wrapper).</span><br>
+  <span id="C6" class="fakeBtn">Closures 6</span><span>Customize existing function using apply() (thin wrapper).</span><br>
+  <span id="C7" class="fakeBtn">Closures 7</span><span>Customize existing function using bind().</span><br>
+  <span id="C8" class="fakeBtn">Closures 8</span><span>Provide context to Object with method.</span><br>
+  <span id="C9" class="fakeBtn">Closures 9</span><span>Provide private context to Object with method.</span><br>
+  <span id="C10" class="fakeBtn">Contexts</span><span>Private vs. public context; context in call()</span><br>
+
+  <p id="pLog"></p>
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="mylog.js"></script>
+  <script src="closures.js"></script>
+</body>
+
+</html>
